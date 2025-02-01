@@ -1,0 +1,24 @@
+{
+  "name": "ai-agent-system",
+  "version": "1.0.0",
+  "description": "A system for managing AI agents",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.0"
+  },
+  "license": "MIT"
+}
