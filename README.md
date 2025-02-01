@@ -1,4 +1,3 @@
-```
 # 🤖 AI Agent System - Your Personal AI Assistant Team
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -42,7 +41,7 @@ graph TD
     E --> L["LinkedIn Agent"]
     E --> M["X Agent"]
     E --> N["Blog Agent"]
-```
+
 
 ## 🚀 Features
 
