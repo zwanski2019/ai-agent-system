@@ -182,7 +182,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ai-agent-system&type=Date)](https://star-history.com/#yourusername/ai-agent-system&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=zwanski2019/ai-agent-system&type=Date)](https://star-history.com/#yourusername/ai-agent-system&Date)
 
 <p align="center">Made with ❤️ by the AI Agent System Team</p>
 ```
