@@ -1,48 +1,3 @@
-# 🤖 AI Agent System - Your Personal AI Assistant Team
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-13.5-black)](https://nextjs.org/)
-[![Prisma](https://img.shields.io/badge/Prisma-5.4-green)](https://www.prisma.io/)
-
-<p align="center">
-  <img src="docs/images/agent-system-architecture.png" alt="AI Agent System Architecture" width="800"/>
-</p>
-
-## 🌟 Overview
-
-AI Agent System is an open-source project that creates a team of specialized AI agents working together to handle various tasks automatically. Think of it as your personal AI assistant team, where each agent has specific responsibilities and expertise.
-
-### 🎯 Key Features
-
-- **🎮 Executive Director Agent**: Main orchestrator that delegates tasks and makes high-level decisions
-- **📱 Communication Manager**: Handles all communication channels (Email, Slack, WhatsApp, etc.)
-- **📊 Project Manager**: Manages tasks, deadlines, and project organization
-- **🔍 Research Manager**: Conducts various types of research including travel planning
-- **📝 Content Manager**: Creates and manages content across different platforms
-- **🤝 CRM Agent**: Manages customer relationships and lead processing
-
-## 🏗️ Architecture
-
-The system is built with a modular, hierarchical structure:
-
-```mermaid title="Agent System Architecture" type="diagram"
-graph TD
-    A["Executive Director Agent"] --> B["Communication Manager"]
-    A --> C["Project Manager"]
-    A --> D["Research Manager"]
-    A --> E["Content Manager"]
-    B --> F["Email Agent"]
-    B --> G["Slack Agent"]
-    B --> H["WhatsApp Agent"]
-    B --> I["Voice Agent"]
-    D --> J["Travel Research"]
-    D --> K["General Research"]
-    E --> L["LinkedIn Agent"]
-    E --> M["X Agent"]
-    E --> N["Blog Agent"]
-
-
 ```markdown
 # 🤖 AI Agent System - Your Personal AI Assistant Team
 
@@ -72,7 +27,7 @@ AI Agent System is an open-source project that creates a team of specialized AI 
 
 The system is built with a modular, hierarchical structure:
 
-```mermaid title="Agent System Architecture" type="diagram"
+```mermaid
 graph TD
     A["Executive Director Agent"] --> B["Communication Manager"]
     A --> C["Project Manager"]
@@ -220,8 +175,29 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ![Star History](https://star-history.com/#yourusername/ai-agent-system&Date)
 
 <p align="center">Made with ❤️ by the AI Agent System Team</p>
+```
 
-Let's also create a simple architecture diagram that you can use in the README:
+---
+
+The error occurred because the Mermaid code block wasn't properly closed with triple backticks. As a result, the parser tried to interpret the following text as part of the Mermaid diagram, leading to the error.
+
+I've ensured the Mermaid code block is correctly closed now. Here's a quick breakdown:
+
+- The Mermaid diagram code starts with:
+
+  ````
+  ```mermaid
+  ````
+
+- And ends with:
+
+  ````
+  ```
+  ````
+
+This should resolve the parsing issue, and your README should now render correctly.
+
+Also, including your interactive architecture diagram can enhance your project. Here's the TypeScript code you can include in your project under `docs/diagrams/architecture.tsx`:
 
 ```tsx
 // file: docs/diagrams/architecture.tsx
@@ -254,7 +230,7 @@ export default function ArchitectureDiagram() {
       ctx.fillStyle = 'white'
       ctx.font = '12px Arial'
       ctx.textAlign = 'center'
-      ctx.fillText(title, x, y)
+      ctx.fillText(title, x, y + 4)
     }
 
     const drawConnection = (x1: number, y1: number, x2: number, y2: number) => {
@@ -273,6 +249,7 @@ export default function ArchitectureDiagram() {
     drawAgent(200, 150, 'Comms', '#ea4335')
     drawAgent(400, 150, 'Project', '#34a853')
     drawAgent(600, 150, 'Research', '#fbbc04')
+    drawAgent(300, 150, 'Content', '#ff6f61')
 
     // Sub Agents
     drawAgent(100, 250, 'Email', '#4285f4')
@@ -280,11 +257,13 @@ export default function ArchitectureDiagram() {
     drawAgent(300, 250, 'WhatsApp', '#4285f4')
     drawAgent(500, 250, 'Travel', '#ea4335')
     drawAgent(600, 250, 'General', '#ea4335')
+    drawAgent(700, 250, 'CRM', '#aa46bb')
 
     // Connections
     drawConnection(400, 80, 200, 120) // Executive to Comms
     drawConnection(400, 80, 400, 120) // Executive to Project
     drawConnection(400, 80, 600, 120) // Executive to Research
+    drawConnection(400, 80, 300, 120) // Executive to Content
 
     // Comms connections
     drawConnection(200, 180, 100, 220)
@@ -294,6 +273,9 @@ export default function ArchitectureDiagram() {
     // Research connections
     drawConnection(600, 180, 500, 220)
     drawConnection(600, 180, 600, 220)
+
+    // Content connections
+    drawConnection(300, 180, 700, 220) // Content to CRM
   }, [])
 
   return (
