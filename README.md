@@ -1,7 +1,3 @@
-Looks like the issue is that the Mermaid code block in your `README.md` isn't properly closed with triple backticks. Because of that, the parser thinks the following Markdown content is part of the Mermaid diagram, which causes the error you're seeing.
-
-Here's your corrected `README.md` with the Mermaid code block properly closed:
-
 ```markdown
 # 🤖 AI Agent System - Your Personal AI Assistant Team
 
