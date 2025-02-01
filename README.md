@@ -177,26 +177,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">Made with ❤️ by the AI Agent System Team</p>
 ```
 
----
-
-The error occurred because the Mermaid code block wasn't properly closed with triple backticks. As a result, the parser tried to interpret the following text as part of the Mermaid diagram, leading to the error.
-
-I've ensured the Mermaid code block is correctly closed now. Here's a quick breakdown:
-
-- The Mermaid diagram code starts with:
-
-  ````
-  ```mermaid
-  ````
-
-- And ends with:
-
-  ````
-  ```
-  ````
-
-This should resolve the parsing issue, and your README should now render correctly.
-
 Also, including your interactive architecture diagram can enhance your project. Here's the TypeScript code you can include in your project under `docs/diagrams/architecture.tsx`:
 
 ```tsx
