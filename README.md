@@ -369,9 +369,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🌟 Star History
 
-[
-
-](https://star-history.com/#yourusername/ai-agent-system&Date)
+(https://star-history.com/#yourusername/ai-agent-system&Date)
 
 `<p align="center">`Made with ❤️ by the AI Agent System Team`</p>`
 
