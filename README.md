@@ -1,3 +1,8 @@
+Looks like the issue is that the Mermaid code block in your `README.md` isn't properly closed with triple backticks. Because of that, the parser thinks the following Markdown content is part of the Mermaid diagram, which causes the error you're seeing.
+
+Here's your corrected `README.md` with the Mermaid code block properly closed:
+
+```markdown
 # 🤖 AI Agent System - Your Personal AI Assistant Team
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -41,7 +46,7 @@ graph TD
     E --> L["LinkedIn Agent"]
     E --> M["X Agent"]
     E --> N["Blog Agent"]
-
+```
 
 ## 🚀 Features
 
@@ -52,6 +57,14 @@ graph TD
 - 📱 Slack communication
 - 🗣️ Voice calls
 - 📅 Calendar management
+
+<!-- Rest of your README content -->
+
+```
+
+By adding the closing triple backticks after the Mermaid diagram, we tell the parser that the code block has ended. This should resolve the rendering issue you're encountering.
+
+Give that a try, and your README should display correctly now. Let me know if you run into any other issues!
 
 ### Content Management
 
