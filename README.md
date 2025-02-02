@@ -276,3 +276,10 @@ export default function ArchitectureDiagram() {
   )
 }
 ```
+
+
+# AI Agents System
+
+A powerful, modular system for orchestrating AI agents and tools for automation of various tasks including social media management, email handling, and more.
+
+[... Rest of our README content ...]
